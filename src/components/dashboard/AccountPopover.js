@@ -85,7 +85,9 @@ export const AccountPopover = (props) => {
               borderTopStyle: "solid",
               borderTopWidth: "1px",
             },
-            padding: "12px 16px",
+            // padding: "12px 16px",
+            py: 1.5,
+            px: 2,
           },
         }}
       >

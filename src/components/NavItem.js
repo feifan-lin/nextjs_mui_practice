@@ -6,7 +6,7 @@ import { Box, Button, ListItem } from "@mui/material";
 const NavItem = (props) => {
   const { href, icon, title, ...others } = props;
   const router = useRouter();
-  const active = href ? router.pathname === href : false;
+  const isActive = href ? router.pathname === href : false;
 
   return (
     <ListItem
@@ -25,17 +25,17 @@ const NavItem = (props) => {
           startIcon={icon}
           disableRipple
           sx={{
-            backgroundColor: active && "rgba(255,255,255, 0.08)",
+            backgroundColor: isActive && "rgba(255,255,255, 0.08)",
             borderRadius: 1,
-            color: active ? "secondary.main" : "neutral.300",
-            fontWeight: active && "fontWeightBold",
+            color: isActive ? "secondary.main" : "neutral.300",
+            fontWeight: isActive && "fontWeightBold",
             justifyContent: "flex-start",
             px: 3,
             textAlign: "left",
             textTransform: "none",
             width: "100%",
             "& .MuiButton-startIcon": {
-              color: active ? "secondary.main" : "neutral.400",
+              color: isActive ? "secondary.main" : "neutral.400",
             },
             "&:hover": {
               backgroundColor: "rgba(255,255,255, 0.08)",

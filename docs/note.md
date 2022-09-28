@@ -33,8 +33,11 @@ yarn add @mui/material @emotion/react @emotion/styled
 # yarn add @mui/material @mui/styled-engine-sc styled-components
 yarn add @mui/icons-material
 yarn add @emotion/cache
-yarn add chart.js
+yarn add chart.js react-chartjs-2
 yarn add @emotion/server
+yarn add date-fns
+yarn add uuid
+yarn add react-perfect-scrollbar
 ```
 
 ##疑问解答

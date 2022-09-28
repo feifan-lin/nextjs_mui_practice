@@ -13,11 +13,8 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-// import { Bell as BellIcon } from "../icons/bell";
 import People from "@mui/icons-material/People";
-// import { UserCircle as UserCircleIcon } from "../icons/user-circle";
 import Face from "@mui/icons-material/Face";
-// import { Users as UsersIcon } from "../icons/users";
 import { AccountPopover } from "./AccountPopover";
 
 const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({
@@ -46,7 +43,7 @@ const DashboardNavbar = (props) => {
         <Toolbar
           disableGutters
           sx={{
-            minHeight: 64,
+            minHeight: { sm: 64, xs: 48 },
             left: 0,
             px: 2,
           }}
