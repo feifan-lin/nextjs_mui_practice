@@ -38,6 +38,8 @@ yarn add @emotion/server
 yarn add date-fns
 yarn add uuid
 yarn add react-perfect-scrollbar
+yarn add formik
+yarn add yup
 ```
 
 ##疑问解答
