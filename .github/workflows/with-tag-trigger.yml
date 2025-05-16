@@ -6,7 +6,7 @@ on:
   push:
     tags:
       # tag format example: demo_v1.0.0, demo_v1.0.1
-      - demo_v.*
+      - "demo_v[0-9].[0-9].[0-9]"
 # One or more jobs, each of which will execute on a runner machine and run a series of one or more steps.
 jobs:
   setup:
